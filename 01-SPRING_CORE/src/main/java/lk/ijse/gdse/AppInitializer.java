@@ -14,10 +14,15 @@ public class AppInitializer {
         SpringBean springBean = context.getBean(SpringBean.class);
         System.out.println(springBean);
 
+        context.registerShutdownHook();
+//        registerShutdownHook() call kalama anithimatama thama context eka call wennh
+//        e kiyn eka ta yatat una object hadan puluwn
+
         SpringBean springBean1 = context.getBean(SpringBean.class);
         System.out.println(springBean1);
 
-        context.close();
+
+
 
     }
 }
