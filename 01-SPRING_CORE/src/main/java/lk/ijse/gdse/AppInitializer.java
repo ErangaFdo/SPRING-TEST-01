@@ -11,6 +11,11 @@ public class AppInitializer {
         context.register(AppConfig.class);
         context.refresh();
 
+        SpringBean springBean = context.getBean(SpringBean.class);
+        System.out.println(springBean);
+
+        SpringBean springBean1 = context.getBean(SpringBean.class);
+        System.out.println(springBean1);
 
         context.close();
 
